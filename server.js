@@ -23,10 +23,14 @@ app.use((req,res,next) =>{
   next();
 });
 
-app.use((req,res,next) =>{
-  res.render('maintainence.hbs');
 
-});
+// ------ maintainence app ---------- //
+// app.use((req,res,next) =>{
+//   res.render('maintainence.hbs');
+//
+// });
+// ------ maintainence app ---------- //
+
 app.get('/', (req, res) => {
   res.render('home.hbs', {
     pageTitle: 'Home Page',
